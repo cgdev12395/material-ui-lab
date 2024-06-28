@@ -14,7 +14,7 @@ const Header = () => {
           <img src="logo.png" alt="Logo" style={{ marginRight: '16px' }} />
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          {textButtons.map ((txt) => <Button sx={{ color: theme.palette.texts.main, marginLeft: 2 }}>{txt}</Button>)}
+          {textButtons.map ((txt) => <Button sx={{ color: theme.palette.texts.white, marginLeft: 2 }}>{txt}</Button>)}
           <IconButton color="inherit">
             <Avatar alt="Avatar" src="avatar.png" />
           </IconButton>

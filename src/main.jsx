@@ -14,7 +14,11 @@ const theme = createTheme ({
     secondary: { main: teal[400]},
     tertiary: { main: '#4a2d6e'},
 
-    texts: { main: 'white' },
+    teal: {
+      primary: { main: teal[200] }
+    },
+
+    texts: { main: '#000', white: 'white' },
     divider: { main: '#222'}
   },
 });

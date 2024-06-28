@@ -1,7 +1,10 @@
 import React from 'react';
 import { Box, Typography, Divider } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const MainPage = () => {
+  const theme = useTheme();
+
   return (
     <Box
       sx={{
@@ -14,10 +17,11 @@ const MainPage = () => {
         boxShadow: 3,
       }}
     >
-      <Typography variant="h2" color="text.secondary" align="left" sx={{mt: 4, ml: 8}} >Welcome, John!</Typography>
-      <Box sx={{ width: '90%', mx: 'auto', mt: 2 }}>
+      <Typography variant="h2" align="left" sx={{mt: 4, ml: 8, color: theme.palette.texts.main}} >Welcome, John!</Typography>
+      <Box sx={{ width: '90%', mx: 'auto', mt: 2, color: theme.palette.divider.main }}>
         <Divider />
       </Box>
+      <Typography variant="h5" align="left" sx={{mt: 4, ml: 2, color: theme.palette.texts.main}} >Your credentials:</Typography>
     </Box>
   );
 };

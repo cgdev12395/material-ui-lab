@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import './App.css';
 
 import Homepage from './pages/Homepage';
+import Login from './pages/Login';
 
 function App() {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ function App() {
   return <>
     <Routes>
       <Route path="/homepage" element={<Homepage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/certificate" element={<Login />} />
     </Routes>
   </>
 }

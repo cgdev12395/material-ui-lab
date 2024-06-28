@@ -13,7 +13,7 @@ const testItems = [
 
 const NavBar = () => {
   const theme = useTheme();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <Paper sx={{
@@ -23,7 +23,7 @@ const NavBar = () => {
       left: 0, top: 0,
       borderRadius: 0,
       mt: 8,
-      color: theme.palette.secondary,
+      backgroundColor: theme.palette.teal.primary.main,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
@@ -48,7 +48,7 @@ const NavBar = () => {
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItem>
-              {index < testItems.length - 1 && <Divider />}
+              <Divider />
             </React.Fragment>
           ))}
         </List>

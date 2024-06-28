@@ -6,15 +6,14 @@ const PersonalDetails = () => {
     <Container
       sx={{
         width: '20vw',
-        height: '100vh',
+        height: '50vh',
         
         marginTop: 10,
-        marginRight: 8,
+        marginRight: 4,
         backgroundColor: 'white',
         boxShadow: 3,
       }}
     >
-      <Typography variant="h2" color="text.secondary" align="left" sx={{mt: 12, ml: 8}} >Welcome, </Typography>
     </Container>
   );
 };
